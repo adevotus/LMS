@@ -2,15 +2,16 @@ package io.credable.loanmanagementsystem;
 
 import io.credable.loanmanagementsystem.Soap.client.SoapClient;
 import io.credable.loanmanagementsystem.Soap.client.WebServiceConfiguration;
+import io.credable.loanmanagementsystem.config.RsaKeyProperties;
 import io.credable.loanmanagementsystem.customerclasses.CustomerResponse;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 @SpringBootApplication
-
-
+@EnableConfigurationProperties(RsaKeyProperties.class)
 public class LoanManagementSystemApplication {
 
     public static void main(String[] args) {

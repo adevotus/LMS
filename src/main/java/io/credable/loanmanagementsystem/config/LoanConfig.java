@@ -22,7 +22,7 @@ public class LoanConfig {
      *********************************************************/
 
     public ResponseEntity<String> createClientToken(String customernumber) {
-        String request = "{ " + "\"url\": \"" + "Http://devotest.credable.io/transactionsApi/" + customernumber + "\", " + "\"name\": \"" + "loan" + "\", " + "\"username\": \"" + "" + "\", " + "\"password\": \"" + "" + "\"" + "}";
+        String request = "{ " + "\"url\": \"" + "Http://13.48.10.129:8080/transactionsApi/" + customernumber + "\", " + "\"name\": \"" + "loan" + "\", " + "\"username\": \"" + "" + "\", " + "\"password\": \"" + "" + "\"" + "}";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> requestEntity = new HttpEntity<>(request, headers);
