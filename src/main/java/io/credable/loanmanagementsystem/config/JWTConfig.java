@@ -65,7 +65,9 @@ public class JWTConfig {
 
                 .build();
     }
-
+/************************************
+ Decoder and Encoder of the jwt
+ * ********************************************************/
     @Bean
     public JwtDecoder jwtDecoder(){
         return NimbusJwtDecoder.withPublicKey(rsaKeyProperties.publicKey()).build();
